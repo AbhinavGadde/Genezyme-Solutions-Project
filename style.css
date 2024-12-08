@@ -1,0 +1,300 @@
+/* Global Resets & Variables */
+:root {
+    --primary-color:blue;
+    --secondary-color:pink;
+    --text-dark: #333;
+    --text-light: #fff;
+    --background-light: #f0f8ff;
+    --shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Header/Navbar */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+    padding: 10px 2em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0 4px 8px var(--shadow);
+    height: 100px;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+.navbar a {
+    margin: 0 10px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .logo img.logo-image {
+    height: 60px;
+    width: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
+}
+
+header .logo .logo-text h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header .logo .logo-text p {
+    margin: 0;
+    font-size: 1rem;
+    font-style: italic;
+    color: #cce0ff;
+}
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('./biotech.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    padding: 20px;
+    box-shadow: 0 8px 12px var(--shadow);
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: var(--text-light);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+    box-shadow: 0 6px 10px var(--shadow);
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px) rotate(2deg);
+    box-shadow: 0 8px 12px var(--shadow);
+}
+
+/* Instrument Grid */
+.instrument-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+}
+
+.instrument-card {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    margin:15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px var(--shadow);
+    transition: box-shadow 0.3s ease;
+    width:450px;
+
+}
+
+.instrument-card:hover {
+    box-shadow: 0 12px 18px var(--shadow);
+}
+
+/* Buttons */
+.btn-secondary {
+    background: var(--accent-color);
+    color: var(--text-light);
+    padding: 8px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #ff6600;
+}
+
+/* Chatbot UI */
+/* Chatbot Styles */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#chatbot-toggle {
+    background: #ff6600;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#chatbot-toggle:hover {
+    transform: scale(1.1);
+}
+
+#chatbox {
+    display: none;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    width: 320px;
+    z-index: 2000;
+}
+
+/* Header Section with Image & Text */
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #0077ff;
+    padding-bottom: 8px;
+}
+
+.chatbot-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.chat-header h3 {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Question & Answer UI */
+.chat-content {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chat-questions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-questions .question {
+    cursor: pointer;
+    background: #0077ff;
+    color: #fff;
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.chat-questions .question:hover {
+    transform: translateY(-3px);
+}
+
+.answer {
+    color: #555;
+    margin: 10px 0;
+    font-size: 1em;
+    font-style: italic;
+}
+
+
+img {
+    width: min-content;
+    height:300px;
+    object-fit:contain;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    background: #002855;
+    color: var(--text-light);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    border-top: 4px solid var(--accent-color);
+    box-shadow: 0 -2px 4px var(--shadow);
+}
