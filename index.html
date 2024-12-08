@@ -4,39 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genezyme Solutions</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <!-- Header Section -->
-
-    <header>
+    <!-- Floating Header -->
+    <header class="sticky-header">
         <div class="logo">
-        <img src="logo.png" alt="Genezyme Solutions Logo" class="logo-image">
-        <div class="logo-text">
-            <h1>Genezyme Solutions</h1>
-            <p>Innovating Biotech & Life Sciences</p>
+            <img src="logo.png" alt="Genezyme Solutions Logo">
+            <div>
+                <h1>Genezyme Solutions</h1>
+                <p>Innovating Biotech & Life Sciences</p>
+            </div>
         </div>
-    </header>
-    <header>
-        <div class="navbar">
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#products">Products</a>
-                <a href="#technical">Technical Details</a>
-                <a href="#instruments">Instruments</a>
-                <a href="#gem">GeM Portal</a>
-                <a href="#contact">Contact Us</a>
-            </nav>
-        </div>
+        <nav class="navbar">
+            <a href="#hero">Home</a>
+            <a href="#products">Products</a>
+            <a href="#technical">Technical Details</a>
+            <a href="#instruments">Instruments</a>
+            <a href="#about">About Us</a>
+            <a href="#gem">GeM Portal</a>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-content">
-            <h2>Welcome to Genezyme Solutions</h2>
-            <p >Pioneering Biotechnology and Life Sciences with innovative products and expertise.</p>
-            <a href="#products" class="btn-primary">Explore Products</a>
+        <div class="meet"><h2> Meet the Team !</h2></div>
+        
+        <div class="hero-container">
+            <div class="executive-container">
+                <div class="executive">
+                    <img src="./shashi.jpg" alt="Director">
+                    <p><strong>Dr. Rahul Singh</strong><br>Director, Genezyme Solutions</p>
+                </div>
+                <div class="executive">
+                    <img src="./neha.avif" alt="Managing Director">
+                    <p><strong>Ms. Neha Sharma</strong><br>Managing Director, Genezyme Solutions</p>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h2>Welcome to Genezyme Solutions</h2>
+                <p>Pioneering Biotechnology and Life Sciences with innovative products and expertise.</p>
+                <a href="#products" class="btn-primary">Explore Products</a>
+            </div>
         </div>
     </section>
 
@@ -44,25 +54,21 @@
     <section id="products" class="section">
         <h2>Our Products</h2>
         <div class="product-grid">
-            <div class="product-card" data-quote="High Precision DNA Separation">
-                <img src="./eletrophoresis.webp"  alt="Electrophoresis System">
+            <div class="product-card" onclick="showProductDetails(1)">
+                <img src="./eletrophoresis.webp" alt="Electrophoresis System">
                 <h3>Electrophoresis System</h3>
-                <p>Advanced molecular separation for DNA and proteins.</p>
             </div>
-            <div class="product-card" data-quote="Reliable Power Supply">
+            <div class="product-card" onclick="showProductDetails(2)">
                 <img src="./power-pack.webp" alt="Power Pack">
                 <h3>Power Pack</h3>
-                <p>Efficient power sources for lab equipment.</p>
             </div>
-            <div class="product-card" data-quote="Automated Precision">
+            <div class="product-card" onclick="showProductDetails(3)">
                 <img src="./pipet.webp" alt="Pipetting Robot">
                 <h3>Pipetting Robot</h3>
-                <p>Automates sample handling with unmatched precision.</p>
             </div>
-            <div class="product-card" data-quote="Automated Precision">
-                <img src="./molecular.png" alt="Molecular biology equipment">
-                <h3>Molecular biology equipment</h3>
-                <p>Elementary device in Molecular experiments</p>
+            <div class="product-card" onclick="showProductDetails(4)">
+                <img src="./molecular.png" alt="Molecular Biology Equipment">
+                <h3>Molecular Biology Equipment</h3>
             </div>
         </div>
     </section>
@@ -95,48 +101,55 @@
     <!-- About Section -->
     <section id="about" class="section dark-section">
         <h2>About Us</h2>
-        <p>Genezyme Solutions is dedicated to advancing life sciences and biotechnology. With a commitment to innovation, we deliver exceptional products for researchers and professionals worldwide.</p>
+        <p>Genezyme Solutions is dedicated to advancing life sciences and biotechnology. Our mission is to provide innovative tools, exceptional service, and groundbreaking products that empower researchers, academicians, and biotech professionals across the globe. With years of expertise and a relentless commitment to quality, we strive to redefine the future of biotechnology.</p>
     </section>
+
+    <!-- GeM Portal Section -->
     <section id="gem" class="section">
         <h2>GeM Portal</h2>
         <p>Visit our products on the Government e-Marketplace:</p>
-        <a href="https://gem.gov.in" target="_blank" class="button">Go to GeM Portal</a>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
+        <a href="https://gem.gov.in" target="_blank" class="btn-secondary">Go to GeM Portal</a>
     </section>
 
-    <!-- Chatbot -->
-    <!-- Updated Chatbox Section -->
-<div id="chatbot">
-    <button id="chatbot-toggle">💬 Chat with Us!</button>
-    <div id="chatbox">
-        <div class="chat-header">
+    <!-- Contact Section -->
+    <footer class="contact-section">
+        <h2>Contact Us</h2>
+        <address>
+            Genezyme Solutions<br>
+            Ground Floor No 2034, Prasanth Nagar 2nd Cross, Pipeline Road T-dasarahalli Urban,<br>
+            Bengaluru-560057, Karnataka, India<br>
+            Contact: Mr. Shashi Kumar<br>
+            Manager, Genezyme Solutions<br>
+            Phone: 9740356476<br>
+            Email: <a href="mailto:anasa22cs@cmrit.ac.in">anasa22cs@cmrit.ac.in</a>
+        </address>
+    </footer>
+
+
+   <!-- Chatbot Button -->
+
+    <div id="chatbot">
+        <button id="chatbot-toggle">💬 Chat with Us!</button>
+        <div id="chatbox">
+          <div class="chat-header">
             <img src="https://cdn-icons-png.flaticon.com/512/2712/2712556.png" alt="Chatbot Agent" class="chatbot-image">
             <h3>How can I assist you today?</h3>
-        </div>
-        <div class="chat-content">
+          </div>
+          <div class="chat-content">
             <ul class="chat-questions">
-                <li onclick="showAnswer(1)" class="question">What products do you offer?</li>
-                <li onclick="showAnswer(2)" class="question">What are your services?</li>
-                <li onclick="showAnswer(3)" class="question">What industries do you serve?</li>
-                <li onclick="showAnswer(4)" class="question">How can I contact support?</li>
+              <li onclick="showAnswer(0)" class="question">What products do you offer?</li>
+              <li onclick="showAnswer(1)" class="question">What are your services?</li>
+              <li onclick="showAnswer(2)" class="question">What industries do you serve?</li>
+              <li onclick="showAnswer(3)" class="question">How can I contact support?</li>
+              <li onclick="showAnswer(4)" class="question">Are there any promotions?</li>
+              <li onclick="showAnswer(5)" class="question">Contact us for other queries</li>
             </ul>
-            <p id="chat-answer" class="answer">Click a question to get started...</p>
+          </div>
+          <p id="chat-answer">Click a question to get started...</p>
         </div>
-    </div>
-</div>
+      </div>
+      
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 Genezyme Solutions | All rights reserved</p>
-    </footer>
+
 </body>
 </html>
