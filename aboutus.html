@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genezyme Solutions</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!-- Floating Header -->
+    <header class="sticky-header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Genezyme Solutions Logo"></a>
+            <div>
+                <h1>Genezyme Solutions</h1>
+                <p>Innovating Biotech & Life Sciences</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="instruments.html">Instruments</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="https://gem.gov.in" target="_blank">GeM Portal</a>
+        </nav>
+    </header>
+    <br>
+    <!-- About Section -->
+    <section id="about" style="text-align: center;">
+        <h2>About Us</h2>
+        <p>Genezyme Solutions is a company operating in the biotechnology and life sciences domain, specializing in innovative solutions for research and industrial applications.<br>
+           Its focus areas include the development and supply of advanced laboratory equipment, tools, and services to support cutting-edge research in molecular biology, genomics,<br>
+           and related fields.<br><br><br>
+           <b style="font-size: x-large;">Key Offerings:</b><br><br>
+            <b style="font-size: larger;">Products:</b><br><br>
+            
+            <b>Electrophoresis Systems:</b> Used for DNA, RNA, and protein analysis.<br><br>
+            <b>Power Packs:</b> Precision instruments for electrophoresis and lab experiments.<br><br>
+            <b>Pipetting Robots:</b> Automating liquid handling tasks for high accuracy.<br><br>
+            <b>Molecular Biology Equipment:</b> Specialized tools for various biological research needs.<br><br><br>
+            <b style="font-size: larger;">Services:</b><br>
+            
+            Customization of equipment based on research needs.<br>
+            Technical support and maintenance services.<br>
+            Consultation for setting up biotech labs.<br><br><br>
+            <b style="font-size: larger;">Industries Served:</b><br>
+            
+            Academic and research institutions.<br>
+            Pharmaceutical and biotech companies.<br>
+            Diagnostic labs and clinical research organizations.<br><br><br>
+            <b style="font-size: x-large;">Mission:</b><br>
+            To empower scientists and researchers with reliable, innovative tools that simplify<br>
+            complex processes and accelerate discoveries in life sciences.</p><br>
+    </section>
+    <!-- Contact Section -->
+    <footer class="contact-section">
+        <h2>Contact Us</h2>
+        <address>
+            Genezyme Solutions<br>
+            Ground Floor No 2034, Prasanth Nagar 2nd Cross, Pipeline Road T-dasarahalli Urban,<br>
+            Bengaluru-560057, Karnataka, India<br>
+            Contact: Mr. Shashi Kumar<br>
+            Manager, Genezyme Solutions<br>
+            Phone: 9740356476<br>
+            Email: <a href="mailto:anasa22cs@cmrit.ac.in">anasa22cs@cmrit.ac.in</a>
+        </address>
+    </footer>
+
+
+   <!-- Chatbot Button -->
+
+    <div id="chatbot">
+        <button id="chatbot-toggle">💬 Chat with Us!</button>
+        <div id="chatbox">
+          <div class="chat-header">
+            <img src="https://cdn-icons-png.flaticon.com/512/2712/2712556.png" alt="Chatbot Agent" class="chatbot-image">
+            <h3>How can I assist you today?</h3>
+          </div>
+          <div class="chat-content">
+            <ul class="chat-questions">
+              <li onclick="showAnswer(0)" class="question">What products do you offer?</li>
+              <li onclick="showAnswer(1)" class="question">What are your services?</li>
+              <li onclick="showAnswer(2)" class="question">What industries do you serve?</li>
+              <li onclick="showAnswer(3)" class="question">How can I contact support?</li>
+              <li onclick="showAnswer(4)" class="question">Are there any promotions?</li>
+              <li onclick="showAnswer(5)" class="question">Contact us for other queries</li>
+            </ul>
+          </div>
+          <p id="chat-answer">Click a question to get started...</p>
+        </div>
+      </div>
+      
+
+
+</body>
+</html>

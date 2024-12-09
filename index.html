@@ -11,41 +11,47 @@
     <!-- Floating Header -->
     <header class="sticky-header">
         <div class="logo">
-            <img src="logo.png" alt="Genezyme Solutions Logo">
+            <a href="index.html"><img src="logo.png" alt="Genezyme Solutions Logo"></a>
             <div>
                 <h1>Genezyme Solutions</h1>
                 <p>Innovating Biotech & Life Sciences</p>
             </div>
         </div>
         <nav class="navbar">
-            <a href="#hero">Home</a>
-            <a href="#products">Products</a>
-            <a href="#technical">Technical Details</a>
-            <a href="#instruments">Instruments</a>
-            <a href="#about">About Us</a>
-            <a href="#gem">GeM Portal</a>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="instruments.html">Instruments</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="https://gem.gov.in" target="_blank">GeM Portal</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="meet"><h2> Meet the Team !</h2></div>
-        
         <div class="hero-container">
-            <div class="executive-container">
-                <div class="executive">
-                    <img src="./shashi.jpg" alt="Director">
-                    <p><strong>Dr. Rahul Singh</strong><br>Director, Genezyme Solutions</p>
-                </div>
-                <div class="executive">
-                    <img src="./neha.avif" alt="Managing Director">
-                    <p><strong>Ms. Neha Sharma</strong><br>Managing Director, Genezyme Solutions</p>
-                </div>
-            </div>
             <div class="hero-content">
                 <h2>Welcome to Genezyme Solutions</h2>
                 <p>Pioneering Biotechnology and Life Sciences with innovative products and expertise.</p>
-                <a href="#products" class="btn-primary">Explore Products</a>
+                <a href="products.html" class="btn-primary">Explore Products</a>
+            </div>
+            <br>
+            <div class="meet"><h2> Meet the Team !</h2></div>
+            <br>
+            <div class="executive-container">
+                <div class="row">
+                    <div class="column">
+                        <div class="executive">
+                            <img src="./shashi.jpg" alt="Director">
+                            <p><strong>Dr. Rahul Singh</strong><br>Director, Genezyme Solutions</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="executive">
+                            <img src="./neha.avif" alt="Managing Director">
+                            <p><strong>Ms. Neha Sharma</strong><br>Managing Director, Genezyme Solutions</p>
+                        </div>
+                    </div>
+                </div>        
             </div>
         </div>
     </section>
@@ -54,63 +60,33 @@
     <section id="products" class="section">
         <h2>Our Products</h2>
         <div class="product-grid">
-            <div class="product-card" onclick="showProductDetails(1)">
-                <img src="./eletrophoresis.webp" alt="Electrophoresis System">
-                <h3>Electrophoresis System</h3>
-            </div>
-            <div class="product-card" onclick="showProductDetails(2)">
-                <img src="./power-pack.webp" alt="Power Pack">
-                <h3>Power Pack</h3>
-            </div>
-            <div class="product-card" onclick="showProductDetails(3)">
-                <img src="./pipet.webp" alt="Pipetting Robot">
-                <h3>Pipetting Robot</h3>
-            </div>
-            <div class="product-card" onclick="showProductDetails(4)">
-                <img src="./molecular.png" alt="Molecular Biology Equipment">
-                <h3>Molecular Biology Equipment</h3>
+            <div class="row">
+                <div class="column">
+                    <div class="product-card" onclick="showProductDetails(1)">
+                        <img src="./eletrophoresis.webp" alt="Electrophoresis System">
+                        <h3>Electrophoresis System</h3>
+                    </div>
+                </div>
+                <a href="products.html" class="btn-primary" style="position: relative; top: 100px; left: -200px;">See More</a>
             </div>
         </div>
     </section>
-
-    <!-- Technical Details Section -->
-    <section id="technical" class="section dark-section">
-        <h2>Technical Details</h2>
-        <p>Download detailed datasheets and specifications for our advanced biotech solutions.</p>
-        <a href="#" class="btn-secondary">Download Datasheet 1</a>
-        <a href="#" class="btn-secondary">Download Datasheet 2</a>
-    </section>
-
     <!-- Instruments Section -->
     <section id="instruments" class="section">
         <h2>Our Instruments</h2>
         <div class="instrument-grid">
-            <div class="instrument-card">
-                <img src="./laboratory-centrifuge.jpg" alt="Lab Centrifuge">
-                <h3>Lab Centrifuge</h3>
-                <p>High-speed centrifuges for biotech applications.</p>
-            </div>
-            <div class="instrument-card">
-                <img src="./testing-tube.webp" alt="Testing Tube">
-                <h3>Testing Tube</h3>
-                <p>Durable and reliable for various lab environments.</p>
-            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="instrument-card">
+                        <img src="./laboratory-centrifuge.jpg" alt="Lab Centrifuge">
+                        <h3>Lab Centrifuge</h3>
+                        <p>High-speed centrifuges for biotech applications.</p>
+                    </div>
+                </div>
+                <a href="instruments.html" class="btn-primary" style="position: relative; top: 100px; left: 100px;">See More</a>
+            </div>    
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="section dark-section">
-        <h2>About Us</h2>
-        <p>Genezyme Solutions is dedicated to advancing life sciences and biotechnology. Our mission is to provide innovative tools, exceptional service, and groundbreaking products that empower researchers, academicians, and biotech professionals across the globe. With years of expertise and a relentless commitment to quality, we strive to redefine the future of biotechnology.</p>
-    </section>
-
-    <!-- GeM Portal Section -->
-    <section id="gem" class="section">
-        <h2>GeM Portal</h2>
-        <p>Visit our products on the Government e-Marketplace:</p>
-        <a href="https://gem.gov.in" target="_blank" class="btn-secondary">Go to GeM Portal</a>
-    </section>
-
     <!-- Contact Section -->
     <footer class="contact-section">
         <h2>Contact Us</h2>

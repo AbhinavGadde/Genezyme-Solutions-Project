@@ -27,3 +27,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+  const productData = [
+    { id: 1, title: "Electrophoresis System", price: "₹20,000" },
+    { id: 2, title: "Power Pack", price: "₹15,000" },
+    { id: 3, title: "Pipetting Robot", price: "₹50,000" },
+    { id: 4, title: "Molecular Biology Equipment", price: "₹30,000" }
+ ];
+
+  function showProductDetails(productId) {
+      const product = productData.find(p => p.id === productId);
+      if (product) {
+          document.getElementById("product-title").textContent = product.title;
+          document.getElementById("product-price").textContent = `Price: ${product.price}`;
+          document.getElementById("product-popup").style.display = "block";
+      }
+  }
+
+  function closePopup() {
+      document.getElementById("product-popup").style.display = "none";
+  }
