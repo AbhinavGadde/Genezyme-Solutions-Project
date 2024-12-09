@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genezyme Solutions</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!-- Floating Header -->
+    <header class="sticky-header">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Genezyme Solutions Logo"></a>
+            <div>
+                <h1>Genezyme Solutions</h1>
+                <p>Innovating Biotech & Life Sciences</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="instruments.html">Instruments</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="https://gem.gov.in" target="_blank">GeM Portal</a>
+        </nav>
+    </header>
+    <!-- Products Section -->
+    <section id="products">
+        <h2 style="text-align: center;">Our Products</h2>
+        <div class="product-grid">
+            <div class="row">
+                <div class="column">
+                    <div class="product-card" onclick="showProductDetails(1)">
+                        <img src="./eletrophoresis.webp" alt="Electrophoresis System">
+                        <h3>Electrophoresis System</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="product-card" onclick="showProductDetails(2)">
+                        <img src="./power-pack.webp" alt="Power Pack">
+                        <h3>Power Pack</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="product-card" onclick="showProductDetails(3)">
+                        <img src="./pipet.webp" alt="Pipetting Robot">
+                        <h3>Pipetting Robot</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="product-card" onclick="showProductDetails(4)">
+                        <img src="./molecular.png" alt="Molecular Biology Equipment">
+                        <h3>Molecular Biology Equipment</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Details Popup -->
+    <div id="product-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="product-title"></h2>
+            <p id="product-price"></p>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <footer class="contact-section">
+        <h2>Contact Us</h2>
+        <address>
+            Genezyme Solutions<br>
+            Ground Floor No 2034, Prasanth Nagar 2nd Cross, Pipeline Road T-dasarahalli Urban,<br>
+            Bengaluru-560057, Karnataka, India<br>
+            Contact: Mr. Shashi Kumar<br>
+            Manager, Genezyme Solutions<br>
+            Phone: 9740356476<br>
+            Email: <a href="mailto:anasa22cs@cmrit.ac.in">anasa22cs@cmrit.ac.in</a>
+        </address>
+    </footer>
+
+
+   <!-- Chatbot Button -->
+
+    <div id="chatbot">
+        <button id="chatbot-toggle">💬 Chat with Us!</button>
+        <div id="chatbox">
+          <div class="chat-header">
+            <img src="https://cdn-icons-png.flaticon.com/512/2712/2712556.png" alt="Chatbot Agent" class="chatbot-image">
+            <h3>How can I assist you today?</h3>
+          </div>
+          <div class="chat-content">
+            <ul class="chat-questions">
+              <li onclick="showAnswer(0)" class="question">What products do you offer?</li>
+              <li onclick="showAnswer(1)" class="question">What are your services?</li>
+              <li onclick="showAnswer(2)" class="question">What industries do you serve?</li>
+              <li onclick="showAnswer(3)" class="question">How can I contact support?</li>
+              <li onclick="showAnswer(4)" class="question">Are there any promotions?</li>
+              <li onclick="showAnswer(5)" class="question">Contact us for other queries</li>
+            </ul>
+          </div>
+          <p id="chat-answer">Click a question to get started...</p>
+        </div>
+      </div>
+      
+
+
+</body>
+</html>
